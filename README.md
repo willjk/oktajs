@@ -15,7 +15,7 @@ This document will refer to itself as "this API" and the Okta API as simply, "Ok
 
 [![Dependency Status](https://david-dm.org/snowulf/oktajs.svg)](https://david-dm.org/snowulf/oktajs)
 [![GitHub issues](https://img.shields.io/github/issues/snowulf/oktajs.svg)](https://github.com/snowulf/oktajs/issues)
-
+[![Build Status](https://travis-ci.org/Snowulf/oktajs.svg?branch=master)](https://travis-ci.org/Snowulf/oktajs)
 
 ## Usage
 To get started, you need an [Okta API key](http://developer.okta.com/docs/getting_started/getting_a_token.html).
@@ -23,7 +23,7 @@ To get started, you need an [Okta API key](http://developer.okta.com/docs/gettin
 This API is for Okta API version 1.
 
 ```js
-var OktaAPI = require('okta-node');
+var OktaAPI = require('oktajs');
 var okta = new OktaAPI("Your-Okta-API-Key", "your-domain");
 ```
 
@@ -86,6 +86,11 @@ If something went wrong while attempting to make a request to Okta, this API wil
 This object MAY NOT include the "resp" property. Existence of it means one of the following:
 1. You are not authorized to access Okta. resp will contain the response from Okta, indicating why you cannot access it.
 2. Okta returned an invalid response to this API. resp will contain the response Okta gave for further troubleshooting.
+
+## Testing
+```bash
+$ env APIKEY=XXXapikeyXXX DOMAIN=myprevieworg npm run test
+```
 
 ## Response structure
 Responses from Okta are left in the same format as it is received. The information on how Okta responds to requests can be found [here](http://developer.okta.com/docs/getting_started/design_principles.html).
