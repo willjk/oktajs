@@ -1,8 +1,7 @@
-# okta-node
+# oktajs
+** *NOTE* oktajs v3 is a fork of [okta-node](https://github.com/oktait/okta-node) v2 and is drop-in compatible. **
 
 A small NodeJS framework for working with the [Okta](http://www.okta.com/) API
-
-** *NOTE*  We are on version 2 now, this update is not v1 backwards compatible. **
 
 ## Overview
 This API is a small layer that handles talking to the Okta API. Primarily:
@@ -12,10 +11,10 @@ This API is a small layer that handles talking to the Okta API. Primarily:
 
 This document will refer to itself as "this API" and the Okta API as simply, "Okta".
 
-[![NPM](https://nodei.co/npm/okta-node.png?compact=true)](https://nodei.co/npm/okta-node/)
+[![NPM](https://nodei.co/npm/oktajs.png?compact=true)](https://nodei.co/npm/oktajs/)
 
-[![Dependency Status](https://david-dm.org/oktait/okta-node.svg)](https://david-dm.org/oktait/okta-node)
-[![GitHub issues](https://img.shields.io/github/issues/oktait/okta-node.svg)](https://github.com/oktait/okta-node/issues)
+[![Dependency Status](https://david-dm.org/snowulf/oktajs.svg)](https://david-dm.org/snowulf/oktajs)
+[![GitHub issues](https://img.shields.io/github/issues/snowulf/oktajs.svg)](https://github.com/snowulf/oktajs/issues)
 
 
 ## Usage
@@ -206,7 +205,5 @@ okta.users.list({'limit':100},function(d){
 ## More Docs!
 All public-facing methods are documented with a Doxygen-like syntax. You can run a tool like [YUIDoc](http://yui.github.io/yuidoc/) to generate your own set.
 
-## Disclaimer & License
-Please be aware that all material published under the [OktaIT](https://github.com/OktaIT/) project have been written by the [Okta](http://www.okta.com/) IT Department but are **NOT OFFICAL** software release of Okta Inc.  As such, the software is provided "as is" without warranty or customer support of any kind.
-
+## License
 This project is licensed under the MIT license, for more details please see the [LICENSE](LICENSE) file.

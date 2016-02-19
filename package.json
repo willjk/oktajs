@@ -1,20 +1,52 @@
 {
-    "name": "okta-node",
-    "description": "Interfaces with the Okta API via NodeJS",
-    "author": "Josh Johnson <jjohnson@okta.com>",
-    "dependencies": {
-        "request": "2.29.x"
-    },
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/oktait/okta-node.git"
-    },
-    "bugs": {
-        "url": "http://github.com/oktait/okta-node/issues"
-    },
-    "main": "index.js",
-    "version": "2.0.1",
-    "engines": {
-        "node": "*"
+  "name": "oktajs",
+  "description": "An interface for the Okta REST API from nodejs",
+  "author": "Jon Davis <jon@snowulf.com>",
+  "contributors":["Josh Johnson <jjohnson@okta.com>","Kevin He <kevin.he@okta.com>"],
+  "tags": [
+    "okta",
+    "identity",
+    "sso",
+    "security"
+  ],
+  "dependencies": {
+      "request": "2.69.x"
+  },
+  "devDependencies": {
+    "chai": "3.5.x",
+    "jshint": "2.9.x",
+    "mocha": "2.4.x"
+  },
+  "repository": {
+      "type": "git",
+      "url": "http://github.com/snowulf/oktajs.git"
+  },
+  "bugs": {
+      "url": "http://github.com/snowulf/oktajs/issues"
+  },
+  "main": "index.js",
+  "version": "3.0.0",
+  "engines": "node >= 0.10.40",
+  "license": "MIT",
+  "scripts": {
+    "test": "npm run lint && mocha --timeout 5000 --slow 1000 test/main.js",
+    "lint": "jshint lib/*.js"
+  },
+  "jshintConfig": {
+    "boss": true,
+    "node": true,
+    "strict": true,
+    "newcap": false,
+    "undef": true,
+    "unused": true,
+    "onecase": true,
+    "lastsemic": true,
+    "indent": 2,
+    "globals": {
+      "escape": true,
+      "describe": true,
+      "it": true,
+      "before": true
     }
+  }
 }
