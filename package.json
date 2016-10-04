@@ -25,7 +25,7 @@
       "url": "http://github.com/snowulf/oktajs/issues"
   },
   "main": "index.js",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "engines": "node >= 0.10.40",
   "license": "MIT",
   "scripts": {
